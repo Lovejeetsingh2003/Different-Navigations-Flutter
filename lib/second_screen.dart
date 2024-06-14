@@ -62,7 +62,7 @@ class _SecondScreenState extends State<SecondScreen> {
                     MaterialPageRoute(
                       builder: (context) => const FourthScreen(),
                     ),
-                    ModalRoute.withName('/'));
+                    (Route<dynamic> route) => false);
               },
               child: const Text(
                 "Fourth Screen(push And Remove Until)",
